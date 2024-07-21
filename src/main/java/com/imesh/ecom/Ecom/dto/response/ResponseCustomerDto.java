@@ -1,5 +1,4 @@
-package com.imesh.ecom.Ecom.dto.request;
-
+package com.imesh.ecom.Ecom.dto.response;
 
 import lombok.*;
 
@@ -8,7 +7,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RequestCustomerDto {
+public class ResponseCustomerDto {
+    private String propertyId;
     private String name;
     private String email;
     private String phone;

@@ -1,39 +1,35 @@
 package com.imesh.ecom.Ecom.entity;
 
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "customer")
 @Builder
-
+@Entity(name = "customer")
 public class Customer {
-
-
     @Id
     @Column(name = "property_id", nullable = false, length = 80)
     private String propertyId;
 
-    @Column(name = "name", nullable = false, length = 45)
+    @Column(name = "name", length = 45, nullable = false)
     private String name;
 
-    @Column(name = "email", nullable = false, length = 100, unique = true)
+    @Column(name = "email", length = 100, nullable = false, unique = true)
     private String email;
 
-    @Column(name = "phone", nullable = false, length = 20)
+    @Column(name = "phone", length = 20, nullable = false)
     private String phone;
 
-    @Column(name = "address", nullable = false, length = 200)
+    @Column(name = "address", length = 255, nullable = false)
     private String address;
 
     @Column(name = "is_active", columnDefinition = "TINYINT")
     private boolean isActive;
-
 
 }
