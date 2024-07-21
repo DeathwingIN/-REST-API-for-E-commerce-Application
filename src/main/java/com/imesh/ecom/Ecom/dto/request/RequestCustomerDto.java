@@ -15,7 +15,7 @@ public class RequestCustomerDto {
     private String email;
     private String phone;
     private String address;
-    private boolean active;
+    private boolean isActive;
 
 
 }

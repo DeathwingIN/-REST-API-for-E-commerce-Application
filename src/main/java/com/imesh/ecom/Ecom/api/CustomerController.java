@@ -2,16 +2,23 @@ package com.imesh.ecom.Ecom.api;
 
 
 import com.imesh.ecom.Ecom.dto.request.RequestCustomerDto;
+import com.imesh.ecom.Ecom.servide.CustomerService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/customers")
+@RequiredArgsConstructor
+
+
 public class CustomerController {
 
 
+    private final CustomerService customerService;
+
     @PostMapping
     public String create(@RequestBody RequestCustomerDto requestCustomerDto) {
-        System.out.println(requestCustomerDto.getName());
+        customerService.create(requestCustomerDto);
         return "Create() ";
     }
 
