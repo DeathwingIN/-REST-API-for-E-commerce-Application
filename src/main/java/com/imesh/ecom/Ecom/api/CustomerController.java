@@ -23,45 +23,37 @@ public class CustomerController {
     @PostMapping
     public ResponseEntity<StandardResponse> create(@RequestBody RequestCustomerDto dto) {
         customerService.create(dto);
-        return new ResponseEntity<>(
-                new StandardResponse(201, "Customer Created", null),
-                HttpStatus.CREATED
-        );
+        return new ResponseEntity<>(new StandardResponse(201, "Customer Created", null), HttpStatus.CREATED);
     }
 
 
     //PathVariable WHERE WE GET ID{URL/id}
     @GetMapping("/{id}")
     public ResponseEntity<StandardResponse> get(@PathVariable String id) {
-        return new ResponseEntity<>(
-                new StandardResponse(201, "Customer Data", customerService.findById(id)),
-                HttpStatus.CREATED
-        );
+        return new ResponseEntity<>(new StandardResponse(200, "Customer Data", customerService.findById(id)), HttpStatus.OK);
     }
 
-    @PutMapping
-    public String update(@RequestBody RequestCustomerDto dto) {
-        return "Customer Updated";
+    @PutMapping("/{id}")
+    public ResponseEntity<StandardResponse> update(@PathVariable String id, @RequestBody RequestCustomerDto dto) {
+        customerService.update(id, dto);
+        return new ResponseEntity<>(new StandardResponse(201, "Customer Updated", null), HttpStatus.CREATED);
     }
 
 
     @GetMapping("/list")
     public String getAll(
             //SEARCH AND PAGINATION
-            @RequestParam String searchText,
-            @RequestParam int page,
-            @RequestParam int size
-    ) {
+            @RequestParam String searchText, @RequestParam int page, @RequestParam int size) {
 
 
         return "Customer List";
     }
 
-//
-//    @GetMapping("/{id}")
-//    public String delete(@PathVariable String id) {
-//        return "Customer Deleted";
-//    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable String id) {
+        return "Customer Deleted";
+    }
 
 
 }
