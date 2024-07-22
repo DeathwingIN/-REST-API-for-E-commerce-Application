@@ -41,12 +41,17 @@ public class CustomerController {
 
 
     @GetMapping("/list")
-    public String getAll(
+    public ResponseEntity<StandardResponse> getAll(
             //SEARCH AND PAGINATION
-            @RequestParam String searchText, @RequestParam int page, @RequestParam int size) {
+            @RequestParam String searchText,
+            @RequestParam int page,
+            @RequestParam int size) {
+        return new ResponseEntity<>(
+                new StandardResponse(201, "Customer List",
+                        customerService.findAll(searchText, page, size)),
+                HttpStatus.CREATED);
 
 
-        return "Customer List";
     }
 
 

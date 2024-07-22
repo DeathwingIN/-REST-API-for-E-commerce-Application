@@ -2,10 +2,12 @@ package com.imesh.ecom.Ecom.service.impl;
 
 import com.imesh.ecom.Ecom.dto.request.RequestCustomerDto;
 import com.imesh.ecom.Ecom.dto.response.ResponseCustomerDto;
+import com.imesh.ecom.Ecom.dto.response.pagiation.CustomerPaginationDto;
 import com.imesh.ecom.Ecom.entity.Customer;
 import com.imesh.ecom.Ecom.repo.CustomerRepo;
 import com.imesh.ecom.Ecom.service.CustomerService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -50,7 +52,7 @@ public class CustomerServiceImpl implements CustomerService {
         if (selectedCustomer.isEmpty()) {
             throw new RuntimeException("Customer Not Found");
         }
-        Customer customer= selectedCustomer.get();
+        Customer customer = selectedCustomer.get();
         customer.setName(dto.getName());
         customer.setEmail(dto.getEmail());
         customer.setPhone(dto.getPhone());
@@ -58,6 +60,19 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setIsActive(dto.getIsActive());
 
         customerRepo.save(customer);
+
+    }
+
+    @Override
+    public CustomerPaginationDto findAll(String searchText, int page, int size) {
+        //To get and Iterate  list
+        return CustomerPaginationDto.builder()
+
+                .dataList(customerRepo.findAllWithSearchText(searchText, PageRequest.of(page, size))
+                        .stream().map(this::toResponseCustomerDto).toList())
+                .count(customerRepo.countAllWithSearchText(searchText))
+                .build();
+
 
     }
 
