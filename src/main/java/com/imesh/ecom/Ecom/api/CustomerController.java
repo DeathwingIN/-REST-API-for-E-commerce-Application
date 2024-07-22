@@ -32,8 +32,11 @@ public class CustomerController {
 
     //PathVariable WHERE WE GET ID{URL/id}
     @GetMapping("/{id}")
-    public String get(@PathVariable String id) {
-        return "Customer Found";
+    public ResponseEntity<StandardResponse> get(@PathVariable String id) {
+        return new ResponseEntity<>(
+                new StandardResponse(201, "Customer Data", customerService.findById(id)),
+                HttpStatus.CREATED
+        );
     }
 
     @PutMapping
