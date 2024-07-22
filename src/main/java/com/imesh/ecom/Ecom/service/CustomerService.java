@@ -14,6 +14,8 @@ public interface CustomerService {
 
     public CustomerPaginationDto findAll(String searchText,int page, int size);
 
+    public void delete(String id);
+
 
 
 }
