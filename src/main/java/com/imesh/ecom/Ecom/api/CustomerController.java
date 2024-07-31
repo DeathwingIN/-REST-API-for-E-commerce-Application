@@ -59,8 +59,8 @@ public class CustomerController {
     public ResponseEntity<StandardResponse> delete(@PathVariable String id) {
         customerService.delete(id);
         return new ResponseEntity<>(
-                new StandardResponse(201, "Customer Deleted", null),
-                HttpStatus.CREATED);
+                new StandardResponse(204, "Customer Deleted", null),
+                HttpStatus.NO_CONTENT);
 
     }
 

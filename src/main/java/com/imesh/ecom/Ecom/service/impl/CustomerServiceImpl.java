@@ -4,6 +4,7 @@ import com.imesh.ecom.Ecom.dto.request.RequestCustomerDto;
 import com.imesh.ecom.Ecom.dto.response.ResponseCustomerDto;
 import com.imesh.ecom.Ecom.dto.response.pagiation.CustomerPaginationDto;
 import com.imesh.ecom.Ecom.entity.Customer;
+import com.imesh.ecom.Ecom.exception.EntryNotFoundException;
 import com.imesh.ecom.Ecom.repo.CustomerRepo;
 import com.imesh.ecom.Ecom.service.CustomerService;
 import lombok.RequiredArgsConstructor;
@@ -41,7 +42,7 @@ public class CustomerServiceImpl implements CustomerService {
     public ResponseCustomerDto findById(String id) {
         Optional<Customer> selectedCustomer = customerRepo.findById(id);
         if (selectedCustomer.isEmpty()) {
-            throw new RuntimeException("Customer Not Found");
+            throw new EntryNotFoundException("Customer Not Found");
         }
         return toResponseCustomerDto(selectedCustomer.get());
     }

@@ -16,4 +16,5 @@ public interface CustomerRepo extends JpaRepository<Customer, String> {
     @Query(value = "SELECT COUNT(*) FROM customer WHERE address LIKE %?1% OR email LIKE %?1% OR name LIKE %?1%", nativeQuery = true)
     public long countAllWithSearchText(String searchText);
 
+
 }
