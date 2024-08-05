@@ -1,10 +1,12 @@
 package com.imesh.ecom.Ecom.entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -37,5 +39,9 @@ public class Customer {
 
     @Column(name = "isActive", columnDefinition = "TINYINT")
     private Boolean isActive;
+
+
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "customer")
+    private Set<CustomerOrder> orders = new HashSet<>();
 
 }

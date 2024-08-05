@@ -6,6 +6,7 @@ import lombok.*;
 
 
 import java.util.HashSet;
+import java.util.Set;
 
 
 @Getter
@@ -29,6 +30,9 @@ public class Product {
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
     private HashSet<ProductImage> images = new HashSet<>();
+
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
+    private Set<CustomerOrder> orders = new HashSet<>();
 
 
 }
