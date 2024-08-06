@@ -18,14 +18,16 @@ import java.util.Date;
 
 public class CustomerOrder {
     @Id
-    @Column(name = "property_id", nullable = false, unique = true,  length = 80)
+    @Column(name = "property_id", nullable = false, unique = true, length = 80)
     private String propertyId;
 
-    @Column(name = "created_date",columnDefinition = "DATETIME",nullable = false)
+    @Column(name = "created_date", columnDefinition = "DATETIME", nullable = false)
     private Date createdDate;
 
     private double total;
     private int qty;
+
+    @Enumerated(value = EnumType.STRING)
     private PaymentType type;
 
 
