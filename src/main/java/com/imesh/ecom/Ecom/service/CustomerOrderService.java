@@ -1,18 +1,21 @@
 package com.imesh.ecom.Ecom.service;
 
 import com.imesh.ecom.Ecom.dto.request.RequestCustomerDto;
+import com.imesh.ecom.Ecom.dto.request.RequestCustomerOrderDto;
 import com.imesh.ecom.Ecom.dto.response.ResponseCustomerDto;
+import com.imesh.ecom.Ecom.dto.response.ResponseCustomerOrderDto;
+import com.imesh.ecom.Ecom.dto.response.pagiation.CustomerOrderPaginationDto;
 import com.imesh.ecom.Ecom.dto.response.pagiation.CustomerPaginationDto;
 
 public interface CustomerOrderService {
 
-    public void create(RequestCustomerDto dto);
+    public void create(RequestCustomerOrderDto dto);
 
-    public ResponseCustomerDto findById(String id);
+    public ResponseCustomerOrderDto findById(String id);
 
-    public void update(String id, RequestCustomerDto dto);
+    public void update(String id, RequestCustomerOrderDto dto);
 
-    public CustomerPaginationDto findAll(String searchText,int page, int size);
+    public CustomerOrderPaginationDto findAll(String customerId, int page, int size);
 
     public void delete(String id);
 

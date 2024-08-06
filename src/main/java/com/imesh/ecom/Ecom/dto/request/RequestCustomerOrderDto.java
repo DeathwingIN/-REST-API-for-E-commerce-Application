@@ -14,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 
-public class CustomerOrderDto {
+public class RequestCustomerOrderDto {
 
 
     private Date createdDate;

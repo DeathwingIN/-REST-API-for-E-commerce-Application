@@ -1,18 +1,22 @@
 package com.imesh.ecom.Ecom.dto.request;
 
 
+
 import lombok.*;
-import org.springframework.web.multipart.MultipartFile;
+
+
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ProductImageDto {
 
+public class RequestProductDto {
 
-    private MultipartFile image;
+    private Long qty;
+    private Double unitPrice;
+    private String description;
 
 
 
