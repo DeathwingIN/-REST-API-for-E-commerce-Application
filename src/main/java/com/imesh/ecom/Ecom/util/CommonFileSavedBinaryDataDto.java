@@ -16,7 +16,7 @@ public class CommonFileSavedBinaryDataDto {
 
 //    SPECIFIC KEY FOR AWS TO IDENTIFY DATA UNIQUE
     private Blob hash;
-    private Blob directory;
+    private String directory;
     private Blob fileName;
     private Blob resourceUrl;
 
