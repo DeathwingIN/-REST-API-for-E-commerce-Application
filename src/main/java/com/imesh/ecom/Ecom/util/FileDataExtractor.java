@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.io.*;
 import java.sql.Blob;
 import java.sql.SQLException;
+import java.nio.charset.StandardCharsets;
 
 
 
@@ -29,6 +30,16 @@ public class FileDataExtractor {
             return outputStream.toByteArray();
         }
     }
+
+
+    public String byteArrayToString(byte[] byteArray) {
+        if (byteArray == null || byteArray.length == 0) {
+            return null;
+        }
+
+        return new String(byteArray, StandardCharsets.UTF_8);
+    }
+
 
     public String extractActualFileName(InputStreamReader streamReader) throws SQLException, IOException {
 

@@ -2,9 +2,16 @@ package com.imesh.ecom.Ecom.dto.response;
 
 
 import com.imesh.ecom.Ecom.entity.enums.PaymentType;
+import lombok.*;
 
 import java.util.Date;
 
+//To ACCESS DATA
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 
 public class ResponseCustomerOrderDto {
 

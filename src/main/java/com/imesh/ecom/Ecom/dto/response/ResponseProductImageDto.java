@@ -1,5 +1,13 @@
 package com.imesh.ecom.Ecom.dto.response;
 
+import lombok.*;
+
+//To ACCESS DATA
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 
 
 public class ResponseProductImageDto {
