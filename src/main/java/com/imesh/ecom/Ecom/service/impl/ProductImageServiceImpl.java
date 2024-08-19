@@ -1,11 +1,10 @@
 package com.imesh.ecom.Ecom.service.impl;
 
 import com.amazonaws.services.account.model.InternalServerException;
-import com.amazonaws.services.mq.model.InternalServerErrorException;
-import com.imesh.ecom.Ecom.dto.request.RequestProductImageDto;
 import com.imesh.ecom.Ecom.dto.response.ResponseProductImageDto;
 import com.imesh.ecom.Ecom.entity.Product;
 import com.imesh.ecom.Ecom.entity.ProductImage;
+import com.imesh.ecom.Ecom.exception.EntryNotFoundException;
 import com.imesh.ecom.Ecom.repo.ProductImageRepo;
 import com.imesh.ecom.Ecom.repo.ProductRepo;
 import com.imesh.ecom.Ecom.service.FileService;
@@ -15,6 +14,7 @@ import com.imesh.ecom.Ecom.util.FileDataExtractor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -38,19 +38,19 @@ public class ProductImageServiceImpl implements ProductImageService {
 
 
     @Override
-    public void create(RequestProductImageDto dto, String productId) throws SQLException, IOException {
+    public void create(MultipartFile file, String productId) throws SQLException, IOException {
 
         CommonFileSavedBinaryDataDto resource = null;
 
         try {
             Optional<Product> selectedProduct = productRepo.findById(productId);
             if (selectedProduct.isEmpty()) {
-                throw new RuntimeException("Product not found");
+                throw new EntryNotFoundException("Product not found");
             }
 
 
             //THIS PASS DATA THAT CONVERT TO BINARY FORMAT
-            resource = fileService.createResource(dto.getImage(), "ecom/product_images", bucketName);
+            resource = fileService.createResource(file, "ecom/product_images", bucketName);
 
 
             ProductImage productImage = ProductImage.
