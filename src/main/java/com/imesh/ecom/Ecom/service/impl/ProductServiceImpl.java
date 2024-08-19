@@ -11,11 +11,20 @@ import com.imesh.ecom.Ecom.exception.EntryNotFoundException;
 import com.imesh.ecom.Ecom.repo.ProductRepo;
 import com.imesh.ecom.Ecom.service.ProductService;
 import com.imesh.ecom.Ecom.util.FileDataExtractor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+
+
+
+@Service
+
+//TO INITIALIZE
+@RequiredArgsConstructor
 
 public class ProductServiceImpl implements ProductService {
 
@@ -46,7 +55,7 @@ public class ProductServiceImpl implements ProductService {
 
 
     @Override
-    public void update(String id, ResponseProductDto dto) {
+    public void update(String id, RequestProductDto dto) {
         Optional <Product> selectedProduct = productRepo.findById(id);
         if (selectedProduct.isEmpty()) {
             throw new EntryNotFoundException("Product not found");

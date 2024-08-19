@@ -12,7 +12,7 @@ public interface ProductService {
     public ResponseProductDto findById(String id);
 
 
-    void update(String id, ResponseProductDto dto);
+    void update(String id, RequestProductDto dto);
 
     public ProductPaginationDto findAll(String searchText, int page, int size);
 
