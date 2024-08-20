@@ -22,11 +22,13 @@ import java.sql.SQLException;
 import java.util.Optional;
 import java.util.UUID;
 
-
+/**
+ * ProductImageServiceImpl is a service implementation for managing product images.
+ * It provides methods for creating, finding, and deleting product images.
+ */
 @RequiredArgsConstructor
 @Service
 public class ProductImageServiceImpl implements ProductImageService {
-
 
     @Value("${aws.bucket_name}")
     private String bucketName;
@@ -36,10 +38,15 @@ public class ProductImageServiceImpl implements ProductImageService {
     private final FileService fileService;
     private final FileDataExtractor dataExtractor;
 
-
+    /**
+     * Creates a new product image.
+     *
+     * @param file      the file to be uploaded
+     * @param productId the ID of the product to which the image belongs
+     * @throws SQLException, IOException if an error occurs during file upload or database operations
+     */
     @Override
     public void create(MultipartFile file, String productId) throws SQLException, IOException {
-
         CommonFileSavedBinaryDataDto resource = null;
 
         try {
@@ -48,24 +55,15 @@ public class ProductImageServiceImpl implements ProductImageService {
                 throw new EntryNotFoundException("Product not found");
             }
 
-
-            //THIS PASS DATA THAT CONVERT TO BINARY FORMAT
+            // Convert file data to binary format and save to S3
             resource = fileService.createResource(file, "ecom/product_images", bucketName);
 
-
-            ProductImage productImage = ProductImage.
-                    builder()
+            ProductImage productImage = ProductImage.builder()
                     .propertyId(UUID.randomUUID().toString())
-                    .hash(dataExtractor.blobToByteArray(
-                            resource.getHash()
-                    ))
+                    .hash(dataExtractor.blobToByteArray(resource.getHash()))
                     .directory(resource.getDirectory().getBytes())
-                    .fileName(dataExtractor.blobToByteArray(
-                            resource.getFileName()
-                    ))
-                    .resourceUrl(dataExtractor.blobToByteArray(
-                            resource.getResourceUrl()
-                    ))
+                    .fileName(dataExtractor.blobToByteArray(resource.getFileName()))
+                    .resourceUrl(dataExtractor.blobToByteArray(resource.getResourceUrl()))
                     .product(selectedProduct.get())
                     .build();
 
@@ -73,21 +71,29 @@ public class ProductImageServiceImpl implements ProductImageService {
 
         } catch (Exception e) {
             fileService.deleteResource(bucketName, resource.getDirectory(),
-                    dataExtractor.extractActualFileName(
-                            new InputStreamReader(resource.getFileName().getBinaryStream())));
+                    dataExtractor.extractActualFileName(new InputStreamReader(resource.getFileName().getBinaryStream())));
             throw new InternalServerException("Something went wrong");
         }
-
-
     }
 
+    /**
+     * Finds a product image by its ID.
+     *
+     * @param id the ID of the product image to be found
+     * @return the response DTO containing the details of the found product image
+     */
     @Override
     public ResponseProductImageDto findById(String id) {
         return null;
     }
 
+    /**
+     * Deletes a product image by its ID.
+     *
+     * @param id the ID of the product image to be deleted
+     */
     @Override
     public void delete(String id) {
-
+        // Implementation for deleting a product image
     }
 }

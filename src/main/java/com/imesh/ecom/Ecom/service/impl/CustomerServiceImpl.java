@@ -14,18 +14,23 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.UUID;
 
-
+/**
+ * CustomerServiceImpl is a service implementation for managing customers.
+ * It provides methods for creating, finding, updating, and deleting customers.
+ */
 @Service
-
-//TO INITIALIZE
 @RequiredArgsConstructor
 public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepo customerRepo;
 
+    /**
+     * Creates a new customer.
+     *
+     * @param dto the data transfer object containing the details of the customer to be created
+     */
     @Override
     public void create(RequestCustomerDto dto) {
-
         Customer customer = Customer.builder()
                 .propertyId(UUID.randomUUID().toString())
                 .name(dto.getName())
@@ -35,9 +40,15 @@ public class CustomerServiceImpl implements CustomerService {
                 .isActive(dto.getIsActive())
                 .build();
         customerRepo.save(customer);
-
     }
 
+    /**
+     * Finds a customer by its ID.
+     *
+     * @param id the ID of the customer to be found
+     * @return the response DTO containing the details of the found customer
+     * @throws EntryNotFoundException if the customer is not found
+     */
     @Override
     public ResponseCustomerDto findById(String id) {
         Optional<Customer> selectedCustomer = customerRepo.findById(id);
@@ -47,6 +58,12 @@ public class CustomerServiceImpl implements CustomerService {
         return toResponseCustomerDto(selectedCustomer.get());
     }
 
+    /**
+     * Updates a customer.
+     *
+     * @param id  the ID of the customer to be updated
+     * @param dto the data transfer object containing the updated details of the customer
+     */
     @Override
     public void update(String id, RequestCustomerDto dto) {
         Optional<Customer> selectedCustomer = customerRepo.findById(id);
@@ -59,29 +76,42 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setPhone(dto.getPhone());
         customer.setAddress(dto.getAddress());
         customer.setIsActive(dto.getIsActive());
-
         customerRepo.save(customer);
-
     }
 
+    /**
+     * Finds all customers matching the search text with pagination support.
+     *
+     * @param searchText the text to search for in the customer fields
+     * @param page       the page number to retrieve
+     * @param size       the number of records per page
+     * @return the pagination DTO containing the list of customers and the total count
+     */
     @Override
     public CustomerPaginationDto findAll(String searchText, int page, int size) {
-        //To get and Iterate  list
         return CustomerPaginationDto.builder()
-
                 .dataList(customerRepo.findAllWithSearchText(searchText, PageRequest.of(page, size))
                         .stream().map(this::toResponseCustomerDto).toList())
                 .count(customerRepo.countAllWithSearchText(searchText))
                 .build();
-
-
     }
 
+    /**
+     * Deletes a customer by its ID.
+     *
+     * @param id the ID of the customer to be deleted
+     */
     @Override
     public void delete(String id) {
         customerRepo.deleteById(id);
     }
 
+    /**
+     * Converts a Customer entity to a ResponseCustomerDto.
+     *
+     * @param customer the customer entity
+     * @return the response DTO containing the details of the customer
+     */
     private ResponseCustomerDto toResponseCustomerDto(Customer customer) {
         return ResponseCustomerDto.builder()
                 .propertyId(customer.getPropertyId())

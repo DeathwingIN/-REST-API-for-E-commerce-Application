@@ -16,7 +16,10 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.UUID;
 
-
+/**
+ * FileServiceImpl is a service implementation for managing file operations with Amazon S3.
+ * It provides methods for creating, deleting, and downloading files.
+ */
 @Service
 @RequiredArgsConstructor
 public class FileServiceImpl implements FileService {
@@ -25,7 +28,15 @@ public class FileServiceImpl implements FileService {
     private final AmazonS3Client s3Client;
     private final ImageUploadGenerator imageUploadGenerator;
 
-
+    /**
+     * Creates a new resource in the specified S3 bucket and directory.
+     *
+     * @param file      the file to be uploaded
+     * @param directory the directory in the S3 bucket where the file will be stored
+     * @param bucket    the name of the S3 bucket
+     * @return a DTO containing the saved file's binary data and metadata
+     * @throws RuntimeException if an error occurs during file upload
+     */
     @Override
     public CommonFileSavedBinaryDataDto createResource(MultipartFile file, String directory, String bucket) {
         try {
@@ -41,20 +52,31 @@ public class FileServiceImpl implements FileService {
                     new SerialBlob(newFileName.getBytes()),
                     new SerialBlob(s3Client.getResourceUrl(bucket, directory + newFileName).getBytes())
             );
-
-
         } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
     }
 
+    /**
+     * Deletes a resource from the specified S3 bucket and directory.
+     *
+     * @param fileName  the name of the file to be deleted
+     * @param directory the directory in the S3 bucket where the file is stored
+     * @param bucket    the name of the S3 bucket
+     */
     @Override
     public void deleteResource(String fileName, String directory, String bucket) {
-
         s3Client.deleteObject(bucket, directory + "/" + fileName);
-
     }
 
+    /**
+     * Downloads a file from the specified S3 bucket.
+     *
+     * @param fileName the name of the file to be downloaded
+     * @param bucket   the name of the S3 bucket
+     * @return a byte array containing the file's data
+     * @throws RuntimeException if an error occurs during file download
+     */
     @Override
     public byte[] downloadFile(String fileName, String bucket) {
         S3Object object = s3.getObject(bucket, fileName);
@@ -65,6 +87,4 @@ public class FileServiceImpl implements FileService {
             throw new RuntimeException(e);
         }
     }
-
-
 }
