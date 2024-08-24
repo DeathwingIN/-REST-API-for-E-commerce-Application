@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Documented ALl in  stage 01" />
+    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Add frontend">
+      <change afterPath="$PROJECT_DIR$/Client/admin/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.module.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/main.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +89,7 @@
     "Spring Boot.EcomApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/client/cient_Ecom",
+    "last_opened_file_path": "C:/Users/imesh/Downloads/-REST-API-for-E-commerce-Application",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +98,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -203,6 +230,8 @@
       <workItem from="1724476999133" duration="36000" />
       <workItem from="1724477053476" duration="710000" />
       <workItem from="1724480995569" duration="268000" />
+      <workItem from="1724482493819" duration="203000" />
+      <workItem from="1724482747213" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="Customer Controller">
       <option name="closed" value="true" />
@@ -412,7 +441,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724167635643</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add frontend">
+      <option name="closed" value="true" />
+      <created>1724482585144</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1724482585144</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add frontend">
+      <option name="closed" value="true" />
+      <created>1724482602067</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1724482602067</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,6 +497,7 @@
     <MESSAGE value="Product Controller added" />
     <MESSAGE value="Finished  CRUD operations" />
     <MESSAGE value="Documented ALl in  stage 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documented ALl in  stage 01" />
+    <MESSAGE value="Add frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add frontend" />
   </component>
 </project>
