@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Documented ALl in  stage 01" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.1.0\php.exe" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jUybxLI0PNwCm1N9zPe9HdD4Rn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.EcomApplication.executor": "Run",
+    "Application.eer.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.EcomApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/client/cient_Ecom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.imesh.ecom.Ecom.service.impl" />
+      <recent name="com.imesh.ecom.Ecom.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\imesh\Downloads\-REST-API-for-E-commerce-Application\src" />
+      <recent name="C:\Users\imesh\Downloads\-REST-API-for-E-commerce-Application\src\main\java\com\imesh\ecom\Ecom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\imesh\Downloads\-REST-API-for-E-commerce-Application" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imesh.ecom.Ecom.api" />
+      <recent name="com.imesh.ecom.Ecom.dto.response.pagiation" />
+      <recent name="com.imesh.ecom.Ecom.dto.response" />
+      <recent name="com.imesh.ecom.Ecom.dto.request" />
+      <recent name="com.imesh.ecom.Ecom.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EcomApplication">
+    <configuration name="EcomApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.imesh.ecom.Ecom.EcomApplication" />
+      <module name="Ecom" />
+      <shortenClasspath name="ARGS_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imesh.ecom.Ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Ecom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imesh.ecom.Ecom.EcomApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EcomApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="" />
+      <created>1721456026023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721456026023</updated>
+      <workItem from="1721456028629" duration="752000" />
+      <workItem from="1721456790006" duration="6545000" />
+      <workItem from="1721466610469" duration="306000" />
+      <workItem from="1721549905844" duration="377000" />
+      <workItem from="1721550466131" duration="656000" />
+      <workItem from="1721551961592" duration="11703000" />
+      <workItem from="1721583076929" duration="1850000" />
+      <workItem from="1721608431780" duration="14050000" />
+      <workItem from="1721671492187" duration="601000" />
+      <workItem from="1721725803523" duration="1738000" />
+      <workItem from="1722394326436" duration="3326000" />
+      <workItem from="1722400191231" duration="138000" />
+      <workItem from="1722400362706" duration="2000" />
+      <workItem from="1722400564615" duration="9122000" />
+      <workItem from="1722430264471" duration="619000" />
+      <workItem from="1722480197047" duration="7496000" />
+      <workItem from="1722491666133" duration="2742000" />
+      <workItem from="1722505843820" duration="1108000" />
+      <workItem from="1722507257582" duration="4249000" />
+      <workItem from="1722518938588" duration="40000" />
+      <workItem from="1722824321063" duration="6525000" />
+      <workItem from="1722840459818" duration="6425000" />
+      <workItem from="1722921512866" duration="8129000" />
+      <workItem from="1723000034510" duration="9541000" />
+      <workItem from="1723522924943" duration="1948000" />
+      <workItem from="1723648161326" duration="148000" />
+      <workItem from="1723780931031" duration="667000" />
+      <workItem from="1723786081327" duration="707000" />
+      <workItem from="1723804765448" duration="639000" />
+      <workItem from="1723813092389" duration="22000" />
+      <workItem from="1723887797174" duration="2922000" />
+      <workItem from="1723958417367" duration="2640000" />
+      <workItem from="1724039371147" duration="4231000" />
+      <workItem from="1724064079875" duration="18000" />
+      <workItem from="1724072196079" duration="16287000" />
+      <workItem from="1724128010387" duration="3446000" />
+      <workItem from="1724155122331" duration="10075000" />
+      <workItem from="1724221242534" duration="3285000" />
+      <workItem from="1724236932401" duration="1497000" />
+      <workItem from="1724476999133" duration="36000" />
+      <workItem from="1724477053476" duration="710000" />
+      <workItem from="1724480995569" duration="268000" />
+    </task>
+    <task id="LOCAL-00001" summary="Customer Controller">
+      <option name="closed" value="true" />
+      <created>1721463816452</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721463816452</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create Customer Feature add">
+      <option name="closed" value="true" />
+      <created>1721555864989</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721555864989</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Customer Controller CRUD">
+      <option name="closed" value="true" />
+      <created>1721584226316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721584226317</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create Customer Updated">
+      <option name="closed" value="true" />
+      <created>1721616445005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721616445005</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Get Customer Id">
+      <option name="closed" value="true" />
+      <created>1721617178308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721617178308</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Customer">
+      <option name="closed" value="true" />
+      <created>1721618663851</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721618663851</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Search with pagination">
+      <option name="closed" value="true" />
+      <created>1721621291273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721621291273</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Delete Customer">
+      <option name="closed" value="true" />
+      <created>1721621750653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721621750653</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create Custom error message">
+      <option name="closed" value="true" />
+      <created>1722405560110</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722405560110</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722509606476</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722509606476</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722509956674</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722509956674</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722510104954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722510104954</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722510137716</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722510137716</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722510196127</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722510196128</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add S3 Bucket Configs">
+      <option name="closed" value="true" />
+      <created>1722510323185</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722510323185</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add S3 Bucket Configs 0">
+      <option name="closed" value="true" />
+      <created>1722510780513</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722510780513</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add S3 Bucket Configs 1">
+      <option name="closed" value="true" />
+      <created>1722511060639</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722511060639</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add S3 Bucket Configs done not tested">
+      <option name="closed" value="true" />
+      <created>1722841177011</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722841177011</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Table Relations added">
+      <option name="closed" value="true" />
+      <created>1722842321703</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722842321703</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Dto Completed">
+      <option name="closed" value="true" />
+      <created>1722923103201</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722923103201</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Pagination for other models">
+      <option name="closed" value="true" />
+      <created>1722928042068</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722928042068</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add function to store data in s3">
+      <option name="closed" value="true" />
+      <created>1723022677882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723022677882</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Product Service Implementation">
+      <option name="closed" value="true" />
+      <created>1724080952680</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1724080952680</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Product Controller added">
+      <option name="closed" value="true" />
+      <created>1724081388096</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1724081388096</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Finished  CRUD operations">
+      <option name="closed" value="true" />
+      <created>1724092653884</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1724092653884</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Documented ALl in  stage 01">
+      <option name="closed" value="true" />
+      <created>1724167635643</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1724167635643</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Customer Controller" />
+    <MESSAGE value="Create Customer Feature add" />
+    <MESSAGE value="Customer Controller CRUD" />
+    <MESSAGE value="Create Customer Updated" />
+    <MESSAGE value="Get Customer Id" />
+    <MESSAGE value="Update Customer" />
+    <MESSAGE value="Search with pagination" />
+    <MESSAGE value="Delete Customer" />
+    <MESSAGE value="Create Custom error message" />
+    <MESSAGE value="Add S3 Bucket Configs" />
+    <MESSAGE value="Add S3 Bucket Configs 0" />
+    <MESSAGE value="Add S3 Bucket Configs 1" />
+    <MESSAGE value="Add S3 Bucket Configs done not tested" />
+    <MESSAGE value="Table Relations added" />
+    <MESSAGE value="Dto Completed" />
+    <MESSAGE value="Pagination for other models" />
+    <MESSAGE value="Add function to store data in s3" />
+    <MESSAGE value="Product Service Implementation" />
+    <MESSAGE value="Product Controller added" />
+    <MESSAGE value="Finished  CRUD operations" />
+    <MESSAGE value="Documented ALl in  stage 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documented ALl in  stage 01" />
+  </component>
+</project>
