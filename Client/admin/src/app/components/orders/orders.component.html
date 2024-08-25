@@ -1,7 +1,7 @@
 <div class="outer" style="margin:20px 0">
   <div class="container">
     <hr>
-    <h1>Product Management</h1>
+    <h1>Order Management</h1>
     <hr>
     <div class="row">
       <div class="col-4">
@@ -9,20 +9,18 @@
           <input type="search" name="" id="" class="form-control" placeholder="Search Here ...">
         </form>
       </div>
-      <div class="col-4">
-        &nbsp;&nbsp;
-        <button class="btn btn-primary" (click)="openNewProductDialogForm()">+ New Product</button>
-      </div>
+
       <div class="col-12" style="margin-top: 50px">
         <table class="table ">
           <thead>
           <tr>
             <th>#id</th>
-            <th>Description</th>
+            <th>Created Date</th>
+            <th>Total Cost</th>
             <th>QTY</th>
-            <th>Uni Price</th>
-            <th>Images</th>
-            <th>Tools</th>
+            <th>Payment Type</th>
+            <th>Customer</th>
+            <th>Product</th>
           </tr>
           </thead>
           <tbody>
@@ -36,36 +34,37 @@
 
             <td>
               <div class="context">
-                Description
+                2024 Jul 20
               </div>
             </td>
 
             <td>
               <div class="context">
-               100
+                $234
               </div>
             </td>
 
             <td>
               <div class="context">
-                $12500 | LKR
+             134
               </div>
             </td>
 
             <td>
               <div class="context">
-                <span (click)="openProductImageForm('?')" >Manage</span>
+                CARD
               </div>
             </td>
 
             <td>
               <div class="context">
-                <button mat-icon-button color="warn">
-                  <mat-icon>delete_sweep</mat-icon>
-                </button>
-                <button mat-icon-button color="primary" (click)="openUpdateProductDialogForm('?')">
-                  <mat-icon>edit</mat-icon>
-                </button>
+               Saman Silva
+              </div>
+            </td>
+
+            <td>
+              <div class="context">
+               ABC Product
               </div>
             </td>
           </tr>

@@ -1,1 +1,19 @@
-<p>manage-prodcut-images works!</p>
+<div>
+  <h2 mat-dialog-title>Manage Product Images</h2>
+  <form action="">
+    <mat-dialog-content class="mat-typography">
+      <div class="col-12">
+        <label for="file">Product Description</label>
+        <input type="file" class="form-control" id="file">
+      </div>
+      <br>
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+    </mat-dialog-actions>
+  </form>
+</div>
+<hr>
+images

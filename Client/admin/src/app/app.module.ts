@@ -17,6 +17,7 @@ import { NewProductComponent } from './components/products/inner-pages/new-produ
 import { UpdateProductComponent } from './components/products/inner-pages/update-product/update-product.component';
 import { ManageProdcutImagesComponent } from './components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component';
 import {MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle} from "@angular/material/dialog";
+import { OrdersComponent } from './components/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle} from
     ProductsComponent,
     NewProductComponent,
     UpdateProductComponent,
-    ManageProdcutImagesComponent
+    ManageProdcutImagesComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
