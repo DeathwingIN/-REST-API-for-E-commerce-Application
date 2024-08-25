@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {NewProductComponent} from "./inner-pages/new-product/new-product.component"
 
 @Component({
   selector: 'app-products',
@@ -6,5 +8,23 @@ import { Component } from '@angular/core';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
+
+  constructor(private matDialog: MatDialog) { }
+  openNewProductDialogForm() {
+    let matDialogRef = this.matDialog.open(NewProductComponent,{
+      width:'500px',
+      disableClose:true
+    });
+
+    matDialogRef.afterClosed().subscribe(response=>{
+      if(response){
+        this.localAllProducts();
+      }
+    })
+  }
+
+  private localAllProducts(){
+
+  }
 
 }
