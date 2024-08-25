@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {NewProductComponent} from "./inner-pages/new-product/new-product.component"
+import {UpdateProductComponent} from "./inner-pages/update-product/update-product.component"
 
 @Component({
   selector: 'app-products',
@@ -16,6 +17,7 @@ export class ProductsComponent {
       disableClose:true
     });
 
+
     matDialogRef.afterClosed().subscribe(response=>{
       if(response){
         this.localAllProducts();
@@ -26,5 +28,23 @@ export class ProductsComponent {
   private localAllProducts(){
 
   }
+
+
+  openUpdateProductDialogForm(product:any) {
+    let matDialogRef = this.matDialog.open(UpdateProductComponent,{
+      width:'500px',
+      disableClose:true,
+      data:product,
+    });
+
+
+    matDialogRef.afterClosed().subscribe(response=>{
+      if(response){
+        this.localAllProducts();
+      }
+    })
+  }
+
+
 
 }

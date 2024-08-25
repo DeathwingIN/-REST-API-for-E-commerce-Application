@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Add Product Management Draft">
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.ts" afterDir="false" />
+    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Add New product pop up window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/update-product/update-product.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +212,7 @@
       <workItem from="1724482493819" duration="203000" />
       <workItem from="1724482747213" duration="812000" />
       <workItem from="1724555016994" duration="1672000" />
-      <workItem from="1724564271700" duration="9701000" />
+      <workItem from="1724564271700" duration="10221000" />
     </task>
     <task id="LOCAL-00001" summary="Customer Controller">
       <option name="closed" value="true" />
@@ -467,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724573457365</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add New product pop up window">
+      <option name="closed" value="true" />
+      <created>1724576146544</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1724576146544</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,6 +505,7 @@
     <MESSAGE value="Add frontend" />
     <MESSAGE value="Add Customer Management Draft" />
     <MESSAGE value="Add Product Management Draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Product Management Draft" />
+    <MESSAGE value="Add New product pop up window" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add New product pop up window" />
   </component>
 </project>
