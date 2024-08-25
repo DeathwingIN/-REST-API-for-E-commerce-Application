@@ -2,7 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/client/cient_Ecom" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/client/ecom-admin" vcs="Git" />
   </component>
 </project>

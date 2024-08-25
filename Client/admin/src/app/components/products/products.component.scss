@@ -1,0 +1,30 @@
+.context {
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  span{
+    color: blue;
+
+  }
+  span:hover{
+    color: red;
+    cursor: pointer;
+  }
+
+}
+
+mat-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+
+mat-icon:hover {
+  color: red;
+}
