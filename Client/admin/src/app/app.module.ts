@@ -8,16 +8,20 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { MatIconModule } from '@angular/material/icon';
-import {MatTooltip} from "@angular/material/tooltip";
-import {MatButton, MatIconButton} from "@angular/material/button";
+import { MatTooltip } from '@angular/material/tooltip';
+import { MatButton, MatIconButton } from '@angular/material/button';
 import { CustomerStatusManagerComponent } from './components/customers/inner/customer-status-manager/customer-status-manager.component';
-import {MatSlideToggle} from "@angular/material/slide-toggle";
+import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { ProductsComponent } from './components/products/products.component';
 import { NewProductComponent } from './components/products/inner-pages/new-product/new-product.component';
 import { UpdateProductComponent } from './components/products/inner-pages/update-product/update-product.component';
 import { ManageProdcutImagesComponent } from './components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component';
-import {MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle} from "@angular/material/dialog";
+import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle } from '@angular/material/dialog';
 import { OrdersComponent } from './components/orders/orders.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {provideHttpClient, withInterceptors} from "@angular/common/http";
+import {httpManagerInterceptor} from "./interceptor/http-manager.interceptor"
+
 
 @NgModule({
   declarations: [
@@ -45,9 +49,12 @@ import { OrdersComponent } from './components/orders/orders.component';
     MatDialogClose,
     MatButton,
     MatDialogTitle,
+    ReactiveFormsModule,
+
   ],
   providers: [
     provideClientHydration(),
+    provideHttpClient(withInterceptors([httpManagerInterceptor])),
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

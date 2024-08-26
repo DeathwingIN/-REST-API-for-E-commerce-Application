@@ -4,18 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Add Update product pop up window">
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/orders/orders.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/orders/orders.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/orders/orders.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/components/orders/orders.component.ts" afterDir="false" />
+    <list default="true" id="8fe5e320-433f-4a8f-b932-b359be6d28a6" name="Changes" comment="Add Orders Component">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/proxy.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/interceptor/http-manager.interceptor.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/interceptor/http-manager.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/service/product/product.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/admin/src/app/service/product/product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/admin/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/manage-prodcut-images/manage-prodcut-images.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/products.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/admin/src/app/components/products/inner-pages/new-product/new-product.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/EcomApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/adviser/AppWideExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/api/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/api/CustomerOrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/api/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/api/ProductImageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/config/S3Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/request/RequestCustomerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/request/RequestCustomerOrderDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/request/RequestProductDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/ResponseCustomerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/ResponseCustomerOrderDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/ResponseProductDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/ResponseProductImageDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/pagiation/CustomerOrderPaginationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/pagiation/CustomerPaginationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/dto/response/pagiation/ProductPaginationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/entity/CustomerOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/entity/ProductImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/entity/enums/PaymentType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/exception/EntryNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/repo/CustomerOrderRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/repo/CustomerRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/repo/ProductImageRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/repo/ProductRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/CustomerOrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/FileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/ProductImageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/impl/CustomerOrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/impl/FileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/impl/ProductImageServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/util/CommonFileSavedBinaryDataDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/util/FileDataExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/util/ImageUploadGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/com/imesh/ecom/Ecom/util/StandardResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/com/imesh/ecom/Ecom/EcomApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +99,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.1.0\php.exe" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -61,39 +116,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.EcomApplication.executor": "Run",
-    "Application.eer.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.EcomApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "js.last.introduce.type": "LET",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/imesh/Downloads/-REST-API-for-E-commerce-Application",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\imesh\\Downloads\\-REST-API-for-E-commerce-Application\\Client\\admin\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.EcomApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.eer.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EcomApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;LET&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/imesh/Downloads/-REST-API-for-E-commerce-Application&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\imesh\\Downloads\\-REST-API-for-E-commerce-Application\\Client\\admin\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.imesh.ecom.Ecom.service.impl" />
@@ -114,7 +169,7 @@
       <recent name="com.imesh.ecom.Ecom.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EcomApplication">
+  <component name="RunManager" selected="Spring Boot.EcomApplication">
     <configuration name="EcomApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.imesh.ecom.Ecom.EcomApplication" />
       <module name="Ecom" />
@@ -138,6 +193,7 @@
     <configuration name="EcomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Ecom" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.imesh.ecom.Ecom.EcomApplication" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -149,6 +205,12 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,7 +282,9 @@
       <workItem from="1724482493819" duration="203000" />
       <workItem from="1724482747213" duration="812000" />
       <workItem from="1724555016994" duration="1672000" />
-      <workItem from="1724564271700" duration="14636000" />
+      <workItem from="1724564271700" duration="16188000" />
+      <workItem from="1724606560974" duration="1204000" />
+      <workItem from="1724640767559" duration="9216000" />
     </task>
     <task id="LOCAL-00001" summary="Customer Controller">
       <option name="closed" value="true" />
@@ -478,7 +542,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724576889665</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add Orders Component">
+      <option name="closed" value="true" />
+      <created>1724602814138</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1724602814138</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +569,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Create Customer Feature add" />
     <MESSAGE value="Customer Controller CRUD" />
     <MESSAGE value="Create Customer Updated" />
     <MESSAGE value="Get Customer Id" />
@@ -522,6 +593,7 @@
     <MESSAGE value="Add Product Management Draft" />
     <MESSAGE value="Add New product pop up window" />
     <MESSAGE value="Add Update product pop up window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Update product pop up window" />
+    <MESSAGE value="Add Orders Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Orders Component" />
   </component>
 </project>
